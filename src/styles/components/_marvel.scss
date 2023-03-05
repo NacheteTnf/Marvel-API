@@ -1,0 +1,41 @@
+.box-content{
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url("../images/marvel.jpg");
+    color: white;
+    font-size: 1.3rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .right-box{
+        flex-basis: 20%;
+    }
+
+    .left-box{
+        flex-basis: 50%;
+    }
+    img{
+        width: 300px;
+        height: 400px;
+        border: 1px solid white;
+        box-shadow: 0 5px 5px 5px rgba(255,255,255,0.2);
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+    
+    img:hover{
+        transform: rotate(20deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .box-content{
+        display: grid;
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+}
